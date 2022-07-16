@@ -1,0 +1,35 @@
+<nav>
+  <a href="/" class="logo">Shop Angular</a>
+  <div class="mobile-menu">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+  </div>
+  <ul class="nav-list">
+    <li>
+      <a routerLink="produtos">Produtos</a>
+    </li>
+    <li>
+      <a routerLink="carrinho">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Carrinho
+        <span class="badge-carrinho">{{
+          carrinhoService.obtemCarrinho().length
+        }}</span>
+      </a>
+    </li>
+    <li><a routerLink="contato">Contato</a></li>
+    <li>
+      <a><i class="fa-brands fa-linkedin"></i></a>
+    </li>
+    <li>
+      <a><i class="fa-brands fa-whatsapp-square"></i></a>
+    </li>
+    <li>
+      <a><i class="fa-brands fa-github-square"></i></a>
+    </li>
+    <li>
+      <a><i class="fa-brands fa-instagram"></i></a>
+    </li>
+  </ul>
+</nav>
